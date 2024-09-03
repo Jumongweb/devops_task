@@ -12,5 +12,5 @@ ENV DATABASE_HOST=${DATABASE_HOST}
 ENV DATABASE_USER=${DATABASE_USER}
 ENV DATABASE_PASSWORD=${DATABASE_PASSWORD}
 
-COPY --from=build target/*.jar UserApp.jar
-ENTRYPOINT ["java", "-jar", "-Dserver.port=8080", "UserApp.jar"]
+COPY --from=build target/*.jar DevOps.jar
+ENTRYPOINT ["java", "-jar", "-Dserver.port=2020", "DevOps.jar"]
